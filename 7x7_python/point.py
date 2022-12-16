@@ -1,4 +1,4 @@
-class pointstatus:
+class PointStatus:
     def __init__(self) -> None:
         # variable
         self.points = { "Study": 1,

@@ -3,7 +3,7 @@ from functools import partial
 from cyclist import Cyclist
 from menu import MenuWindow
 from space import SpaceStatus
-from point import pointstatus
+from point import PointStatus
 
 class GameFrame(Frame):
 
@@ -18,10 +18,10 @@ class GameFrame(Frame):
                       "B": None,
                       "C": None,
                       "D": None}
-        self.point["A"] = pointstatus()
-        self.point["B"] = pointstatus()
-        self.point["C"] = pointstatus()
-        self.point["D"] = pointstatus()
+        self.point["A"] = PointStatus()
+        self.point["B"] = PointStatus()
+        self.point["C"] = PointStatus()
+        self.point["D"] = PointStatus()
         
         #status
         self.turn = 0
