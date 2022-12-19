@@ -1,7 +1,7 @@
 from tkinter import *
 
 
-class MenuWindow(Frame):
+class MenuFrame(Frame):
     def __init__(self, master = None):
         super().__init__(master)
 
@@ -52,7 +52,10 @@ class MenuWindow(Frame):
         self.button_desc.place(x = 118, y = 152)
 
 
-    #function    
+    #function
+    def btn_clicked(self):
+        print("^~?")
+
     def exit(self):
         self.master.destroy()
     

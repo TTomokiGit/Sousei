@@ -1,7 +1,7 @@
 from tkinter import *
 from functools import partial
 from cyclist import Cyclist
-from menu import MenuWindow
+from menu import MenuFrame
 from space import SpaceStatus
 from point import PointStatus
 
@@ -304,7 +304,7 @@ class GameFrame(Frame):
     def create_menu(self):
         if self.menu == None or not self.menu.winfo_exists():
             self.menu = Toplevel(self.master)
-            self.app = MenuWindow(self.menu)
+            self.app = MenuFrame(self.menu)
 
 
     def __del__(self):

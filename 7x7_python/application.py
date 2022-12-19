@@ -1,5 +1,5 @@
 from tkinter import *
-from menu import MenuWindow
+from menu import MenuFrame
 from game import GameFrame
 
 
@@ -112,7 +112,7 @@ class Application(Frame):
     def create_menu(self):
         if self.menu == None or not self.menu.winfo_exists():
             self.menu = Toplevel(self.master)
-            self.menu = MenuWindow(self.menu)
+            self.menu = MenuFrame(self.menu)
     
     def create_game(self):
         if not(self.game == None):
