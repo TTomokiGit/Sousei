@@ -112,7 +112,7 @@ class Application(Frame):
     def create_menu(self):
         if self.menu == None or not self.menu.winfo_exists():
             self.menu = Toplevel(self.master)
-            self.menu = MenuFrame(self.menu)
+            self.app = MenuFrame(self.menu)
     
     def create_game(self):
         if not(self.game == None):
