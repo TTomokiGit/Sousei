@@ -1,12 +1,3 @@
----
-name: Issue template
-about: Issue template's here.
-title: ''
-labels: ''
-assignees: ''
-
----
-
 ## Overview
 Please provide an overview of the issue you are creating.
 ex) I want to adapt the style of the header.
